@@ -3,10 +3,10 @@
 class Cat:
   # make speak function
   def speak(self):
-        print("Meow!🐱")
+        print("Purr")
 
-ella = Cat()
-ella.speak()
+Jane = Cat()
+Jane.speak()
 
 # Write a new class `Dog` with its own `speak` method
 class Dog:
@@ -14,16 +14,16 @@ class Dog:
     print("bark")
 
 # Write a new class `Dog` with its own `speak` method
-class ServiceDog:
+class SmallDog:
   def speak(self):
-    print("...")
+    print("Woof")
 
 class Dog:
   def speak(self):
-    print("bark")
+    print("Loud Woof")
 
 # Make a new object of class `Dog` and call its `speak` method
 #### YOUR CODE HERE ####
-damien = ServiceDog()
-damien.speak()
+Jeffry = SmallDog()
+Jeffry.speak()
 

@@ -29,3 +29,6 @@ nessie.speak()
 
 # Make a new object of class `Dog` and call its `speak` method
 #### YOUR CODE HERE ####
+buddy = Dog("Buddy")
+buddy.speak()
+

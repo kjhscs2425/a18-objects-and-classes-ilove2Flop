@@ -3,24 +3,35 @@ import turtle
 turtle.penup()
 turtle.hideturtle()
 
-# Write a new class `Point` with these methods:
-# `__init__` sets `self.x` and `self.y`.
-# `__str__` returns "(x, y)" for your object's x- and y-coordinates.
-# `draw`:
-#    1. uses `turtle.goto` to go to that x and y coordinate
-#    2. stamps a point with `turtle.dot`
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
 
+    def __str__(self):
+        return f"({self.x}, {self.y})"
 
-# Make 4 new objects of the class Point: (0, 0), (100, 0), (100, 100), (0, 100)
-# Print your objects.
-# Run your draw method for that object.
+    def draw(self):
+        turtle.goto(self.x, self.y)
+        turtle.dot(5, "black")  # Draw a small dot at the point
+        turtle.write(str(self), align="left", font=("Arial", 10, "normal"))
 
+# Create 4 point objects
+p1 = Point(0, 0)
+p2 = Point(100, 0)
+p3 = Point(100, 100)
+p4 = Point(0, 100)
 
-#### OPTIONAL extra credit ####
-# The `str` function will run the `__str__` method for an object. Use the
-# `turtle.write` method and the `str` function to add a label to your point
-# when you draw it.
+# Print points
+print(p1)
+print(p2)
+print(p3)
+print(p4)
 
+# Draw points
+p1.draw()
+p2.draw()
+p3.draw()
+p4.draw()
 
 turtle.exitonclick()
-
